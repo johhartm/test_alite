@@ -26,11 +26,11 @@ if __name__ == "__main__":
     cutout.prepare()
 
     #load initial locations of wind turbines
-    location_coords = gpd.read_file("data/HY1_DWG_18x100_wind_turbines_for_time_series_4326_20220324.geojson")
+    #location_coords = gpd.read_file("data/HY1_DWG_18x100_wind_turbines_for_time_series_4326_20220324.geojson")
     #check csr of cutout and adapt coordinates of wind turbines
     #crs is the same
 
-
+    """
     # build list of installed capacities for every profile
     profiles = {}
     sites_names = location_coords.NAME.unique()
@@ -81,5 +81,5 @@ if __name__ == "__main__":
         plt.title("Wind time-series Project Area Jan 2021")
         plt.tight_layout()
         plt.savefig(fname = f"Plots/Diff_{site_name}.png")
-
+"""
 # calculate statistical differences like RMSE
